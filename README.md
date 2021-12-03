@@ -1,1 +1,1 @@
-# gohorse
+# GoHorse
