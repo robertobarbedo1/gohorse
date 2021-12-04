@@ -48,7 +48,7 @@ export default function Home({ axiomsCollection }) {
     <p>The oldest and true development method.</p>
     <ol > 
       {axiomsCollection.items.slice().sort((e1, e2) => e1.number > e2.number ? 1 : -1 ).map(q=>
-      <li>
+      <li key={q.number}>
       <Link href={`/axiom/${q.slug}`}>
         <a>{q.title}</a>
       </Link>
