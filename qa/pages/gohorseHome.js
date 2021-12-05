@@ -45,6 +45,7 @@ export async function getStaticProps() {
 export default function Home({ axiomsCollection }) {
   return (
     <>
+    <p><Link href="/">back samples home</Link></p>
     <h2>eXtreme Go Horse (XGH) Process</h2>
     <img src="https://gohorseprocess.com.br/wp-content/uploads/2017/05/horse21.png"/>
     <p>The oldest and true development method.</p>

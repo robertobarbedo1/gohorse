@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
+import Link from 'next/link'
 
 
 
@@ -8,7 +9,9 @@ const Launch = ({ launch }) => {
   const { lids } = router.query
  
   return (
-    <div> <span>Mission Name:  {launch.mission_name}</span><br />
+    <div> 
+     <p><Link href="/launchHome">back</Link></p>
+     <span>Mission Name:  {launch.mission_name}</span><br />
      <span>Mission Year:  {launch.launch_year}</span><br />
      <span>Mission Date:  {launch.launch_date_local}</span>
     </div>

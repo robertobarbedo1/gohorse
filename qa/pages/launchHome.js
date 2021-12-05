@@ -44,6 +44,7 @@ export default function Home({ launches }) {
   
   return (
     <>
+    <p><Link href="/">back samples home</Link></p>
     <p>
     <h2>Launch list:</h2>
       <ul>

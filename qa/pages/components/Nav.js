@@ -7,8 +7,8 @@ function Nav() {
       <h1>Samples</h1>
       <ul>
         
-        <li><h2><Link href="/gohorseHome" passHref>Go Horse Methodology - Contentful CMS Sandbox</Link></h2></li>
-        <li><h2><Link href="/launchHome" passHref>Spacial lauches list - Public Graphql</Link></h2></li>
+        <li><h2><Link href="/gohorseHome" passHref>Contentful CMS Sandbox: Go Horse Methodology</Link></h2></li>
+        <li><h2><Link href="/launchHome" passHref>Public Launched GraphQL: Spacial lauches list - </Link></h2></li>
       </ul>
       </div>
     )
