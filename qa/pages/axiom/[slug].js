@@ -8,8 +8,7 @@ export async function getStaticProps(context) {
   const accessToken = process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN;
 
   const slug = context.params.slug;
-  console.log(slug);
-
+  
   const client = new ApolloClient({
     uri: `https://graphql.contentful.com/content/v1/spaces/${space}`,
     cache: new InMemoryCache()

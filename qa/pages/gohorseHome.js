@@ -44,6 +44,19 @@ export async function getStaticProps() {
 
 export default function Home({ axiomsCollection }) {
   return (
-    <Nav/>
+    <>
+    <h2>eXtreme Go Horse (XGH) Process</h2>
+    <img src="https://gohorseprocess.com.br/wp-content/uploads/2017/05/horse21.png"/>
+    <p>The oldest and true development method.</p>
+    <ol> 
+      {axiomsCollection.items.slice().sort((e1, e2) => e1.number > e2.number ? 1 : -1 ).map(q=>
+      <li key={q.number}>
+      <Link href={`/axiom/${q.slug}`}>
+        <a>{q.title}</a>
+      </Link>
+      </li>
+      )}
+    </ol>
+    </>
   )
 }
